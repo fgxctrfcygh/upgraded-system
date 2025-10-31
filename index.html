@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funksiya misollari</title>
+</head>
+<body>
+
+  <script>
+    
+    function kvadrat(n) {
+      return n ** 2;
+    }
+    console.log("1. Kvadrat:", kvadrat(5));
+
+   
+    function juftYokiToq(n) {
+      return n % 2 === 0 ? "Juft" : "Toq";
+    }
+    console.log("2. Juft yoki toq:", juftYokiToq(7));
+
+  
+    function engKatta(a, b, c) {
+      return Math.max(a, b, c);
+    }
+    console.log("3. Eng katta:", engKatta(12, 9, 27));
+
+   
+    function yigindi(...sonlar) {
+      return sonlar.reduce((a, b) => a + b, 0);
+    }
+    console.log("4. Yig‘indi:", yigindi(5, 10, 15, 20));
+
+   
+    function tortburchakYuzi(uzunlik, kenglik) {
+      return uzunlik * kenglik;
+    }
+    console.log("5. To‘rtburchak yuzi:", tortburchakYuzi(6, 4));
+
+    
+    function yoshHisobla(tugilganYil) {
+      const hozirgiYil = new Date().getFullYear();
+      return hozirgiYil - tugilganYil;
+    }
+    console.log("6. Yosh:", yoshHisobla(2005));
+    
+    function faktoriyal(n) {
+      if (n === 0 || n === 1) return 1;
+      return n * faktoriyal(n - 1);
+    }
+    console.log("7. Faktorial:", faktoriyal(5));
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>
